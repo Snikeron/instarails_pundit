@@ -5,6 +5,12 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+################
+# Imported Gems
+################
+# Use Devise for user authentication
+gem 'devise'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
@@ -38,6 +44,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Rspec Rails for spec testing
   gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
+  gem 'dotenv-rails'
 end
 
 group :development do
