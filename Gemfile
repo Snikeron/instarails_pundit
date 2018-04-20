@@ -44,6 +44,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Rspec Rails for spec testing
   gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
+  gem 'dotenv-rails'
 end
 
 group :development do
