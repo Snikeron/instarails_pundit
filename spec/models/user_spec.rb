@@ -12,4 +12,5 @@ RSpec.describe User, type: :model do
     user.password = ENV.fetch('USER_PASSWORD')
     expect(user.password).to eq ('password')
   end
+
 end
